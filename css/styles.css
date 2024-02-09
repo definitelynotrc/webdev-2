@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url("/img/bg.png");
+  background-image: url("../img/bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Inter", sans-serif;
@@ -19,6 +19,7 @@ body {
   margin-right: auto;
   padding: 50px;
 }
+
 .container {
   display: flex;
   justify-content: center;
@@ -31,8 +32,7 @@ body {
   -webkit-backdrop-filter: blur(9.5px);
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 50px;
-  margin-bottom: 20px;
+  padding: 5%;
 }
 
 .text-holder {
@@ -93,34 +93,45 @@ body {
 
 .box-holder {
   display: flex;
-  width: 100%;
+  width: 50%;
   height: 500px;
   flex-wrap: wrap;
+  gap: 10px;
 }
 
 .box {
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   background: rgba(12, 14, 26, 0.15);
-  backdrop-filter: blur(18.5px);
-  -webkit-backdrop-filter: blur(18.5px);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
   border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(44, 51, 86, 0.02) 0%,
+    rgba(173, 185, 245, 0.04) 100%
+  );
 }
 
 .box1 {
-  height: 60%;
-  width: 60%;
+  height: 50%;
+  width: calc(60% - 10px);
 }
 .box2 {
-  width: 40%;
+  width: calc(40% - 10px);
 }
 .box3,
 .box4 {
-  height: 40%;
-  width: 25%;
+  height: 50%;
+  width: calc(30% - 10px);
 }
+
+.box4 {
+  width: calc(25% - 10px);
+}
+
 .box5 {
-  height: 40%;
-  width: 50%;
+  height: 50%;
+  width: calc(46% - 10px);
 }
 .footer {
   background-color: #202334;
