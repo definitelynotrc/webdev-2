@@ -33,6 +33,9 @@ body {
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   padding: 5%;
+  position: relative;
+  height: 90vh;
+  padding-bottom: 8%;
 }
 
 .text-holder {
@@ -93,10 +96,11 @@ body {
 
 .box-holder {
   display: flex;
+  height: 60%;
   width: 50%;
-  height: 500px;
   flex-wrap: wrap;
   gap: 10px;
+  bottom: 0;
 }
 
 .box {
@@ -110,18 +114,19 @@ body {
     rgba(44, 51, 86, 0.02) 0%,
     rgba(173, 185, 245, 0.04) 100%
   );
+
+  height: 55%;
 }
 
 .box1 {
-  height: 50%;
   width: calc(60% - 10px);
 }
 .box2 {
   width: calc(40% - 10px);
 }
+
 .box3,
 .box4 {
-  height: 50%;
   width: calc(30% - 10px);
 }
 
@@ -130,9 +135,9 @@ body {
 }
 
 .box5 {
-  height: 50%;
   width: calc(46% - 10px);
 }
+
 .footer {
   background-color: #202334;
   padding: 20px;
