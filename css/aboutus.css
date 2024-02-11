@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+}
+
+nav {
+  border-radius: 9px;
+  background: #090a1c;
+  backdrop-filter: blur(50px);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 540px;
+  height: 51px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  position: relative;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+nav svg {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: transform 1s ease-in-out;
+}
+
+nav svg:hover {
+  transform: rotate(360deg);
+}
+
+nav li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 1s ease, background-color 1s ease-in-out;
+}
+
+nav li:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background: rgb(56, 9, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 9, 121, 1) 20%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+nav li.active::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  background: rgb(56, 9, 121);
+  background: linear-gradient(
+    90deg,
+    rgba(56, 9, 121, 1) 20%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-holder {
+  text-align: center;
+}
+
+.text-holder h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.text-holder p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.img-con {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.img-con svg {
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  animation: spin 5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.vision-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 15px;
+  padding: 20px;
+  width: 70%;
+}
+.team-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 70%;
+}
+.mission-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 70%;
+}
+.values-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 20px;
+  width: 70%;
+}
+/*  */
+
+.company-vision h2,
+.team h2,
+.mission h2,
+.values h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.company-vision p,
+.team p,
+.mission p,
+.values p {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+
+  border-radius: 15px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.icon-link {
+  color: #ffffff;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.icon-link:hover {
+  color: #6c757d;
+  transform: scale(1.2);
+}

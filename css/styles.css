@@ -175,8 +175,8 @@ nav button:hover {
 
 .box-holder {
   display: flex;
-  height: 60%;
-  width: 50%;
+  height: 65%;
+  width: 60%;
   flex-wrap: wrap;
   gap: 10px;
   bottom: 0;
@@ -189,12 +189,21 @@ nav button:hover {
   -webkit-backdrop-filter: blur(9.5px);
   border-radius: 22px;
   border: 1px solid rgba(255, 255, 255, 0.18);
-  height: 55%;
+  height: 60%;
+  color: #fff;
+  padding: 20px;
+
+  gap: 10px;
+}
+.box p {
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .box1 {
   width: calc(60% - 10px);
 }
+
 .box2 {
   width: calc(40% - 10px);
 }
@@ -211,13 +220,54 @@ nav button:hover {
 .box5 {
   width: calc(46% - 10px);
 }
-
-.footer {
-  background-color: #202334;
-  padding: 20px;
+.img-card {
+  position: absolute;
+  box-shadow: 0 8px 32px 0 rgba(97, 43, 197, 0.493);
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+}
+.card2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.card3 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.card4 {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.card5 {
+  width: 120px;
+  height: 120px;
+  border-radius: 10px;
+}
+.footer {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+.footer p {
+  margin: 10px 0;
 }
 
 .social-icons {
@@ -230,8 +280,10 @@ nav button:hover {
   font-size: 24px;
   text-decoration: none;
   transition: color 0.3s ease-in-out;
+  animation: bounce 1s infinite;
 }
 
 .icon-link:hover {
   color: #6c757d;
+  transform: scale(1.2);
 }
