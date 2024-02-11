@@ -55,13 +55,13 @@ nav svg {
   font-size: 20px;
   cursor: pointer;
   margin-right: 20px;
-  transition: transform 0.3s ease;
+  transition: transform 1s ease-in-out;
 }
 nav svg:hover {
-  transform: rotate(180deg);
+  transform: rotate(360deg);
 }
 
-nav a::before {
+nav li::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -71,10 +71,10 @@ nav a::before {
   background-color: transparent;
   transform: scaleX(0);
   transform-origin: bottom right;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: transform 1s ease, background-color 1s ease-in-out;
 }
 
-nav a:hover::before {
+nav li:hover::before {
   transform: scaleX(1);
   transform-origin: bottom left;
   background: rgb(56, 9, 121);
@@ -85,11 +85,10 @@ nav a:hover::before {
   );
 }
 
-nav a.active::before {
+nav li.active::before {
   transform: scaleX(1);
   transform-origin: bottom left;
   background: rgb(56, 9, 121);
-
   background: linear-gradient(
     90deg,
     rgba(56, 9, 121, 1) 20%,
