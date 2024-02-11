@@ -276,6 +276,7 @@ nav li.active::before {
   margin-bottom: 10px;
   font-weight: 200;
 }
+
 .footer {
   padding: 20px;
   display: flex;
